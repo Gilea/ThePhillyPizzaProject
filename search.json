@@ -1,0 +1,124 @@
+[
+  {
+    "title": "Best Pizza in Philadelphia",
+    "url": "/blog/best-pizza-philadelphia/",
+    "excerpt": "A deep dive into what makes Philly's pizza scene one of the most underrated in America.",
+    "category": "Guide",
+    "tags": [
+      "Philadelphia",
+      "guide",
+      "pizza"
+    ]
+  },
+  {
+    "title": "The History of Tomato Pie",
+    "url": "/blog/history-tomato-pie/",
+    "excerpt": "Before New York had the slice, the Delaware Valley had the tomato pie.",
+    "category": "History",
+    "tags": [
+      "history",
+      "tomato pie",
+      "Philadelphia"
+    ]
+  },
+  {
+    "title": "South Philly Pizza Tour",
+    "url": "/blog/south-philly-pizza-tour/",
+    "excerpt": "A walking guide from the Italian Market to Passyunk Avenue.",
+    "category": "Guide",
+    "tags": [
+      "south philly",
+      "guide",
+      "Italian Market"
+    ]
+  },
+  {
+    "title": "How to Judge Pizza",
+    "url": "/blog/how-to-judge-pizza/",
+    "excerpt": "Our five pizza criteria and four restaurant criteria explained.",
+    "category": "Method",
+    "tags": [
+      "scoring",
+      "method",
+      "criteria"
+    ]
+  },
+  {
+    "title": "Hidden Pizza Gems in Philadelphia",
+    "url": "/blog/hidden-gems/",
+    "excerpt": "The spots you're missing \u2014 BYOB discoveries and neighborhood stalwarts.",
+    "category": "Guide",
+    "tags": [
+      "hidden gems",
+      "BYOB",
+      "Philadelphia"
+    ]
+  },
+  {
+    "title": "Best Sicilian Pizza in Philadelphia",
+    "url": "/blog/best-sicilian-pizza/",
+    "excerpt": "Thick, square, and deeply satisfying. Where to find it.",
+    "category": "Guide",
+    "tags": [
+      "Sicilian",
+      "square",
+      "Philadelphia"
+    ]
+  },
+  {
+    "title": "Best New York Style Pizza in Philadelphia",
+    "url": "/blog/best-new-york-style/",
+    "excerpt": "The foldable, crispy, cheesy slice \u2014 where to find the real thing in Philly.",
+    "category": "Guide",
+    "tags": [
+      "New York",
+      "slice",
+      "Philadelphia"
+    ]
+  },
+  {
+    "title": "The Oldest Pizza Shops in Philadelphia",
+    "url": "/blog/oldest-pizza-shops/",
+    "excerpt": "Institutions that have been feeding the city for generations.",
+    "category": "History",
+    "tags": [
+      "history",
+      "institutions",
+      "old school"
+    ]
+  },
+  {
+    "title": "Pizza Etiquette",
+    "url": "/blog/pizza-etiquette/",
+    "excerpt": "Fork and knife or fold? The unwritten rules of eating pizza in Philadelphia.",
+    "category": "Culture",
+    "tags": [
+      "etiquette",
+      "culture",
+      "BYOB"
+    ]
+  },
+  {
+    "title": "Pizza Events in Philadelphia",
+    "url": "/blog/pizza-events-philadelphia/",
+    "excerpt": "Pop-ups, festivals, collaborations, and seasonal specials.",
+    "category": "Events",
+    "tags": [
+      "events",
+      "pop-ups",
+      "calendar"
+    ]
+  },
+  {
+    "title": "Sorellina Review",
+    "url": "/reviews/sorellina/",
+    "excerpt": "Neapolitan pizza in Center City. Score: 6.7/10. Excellent dough, inconsistent kitchen.",
+    "category": "Review",
+    "tags": [
+      "Neapolitan",
+      "Center City",
+      "review",
+      "sorellina"
+    ]
+  }
+]
