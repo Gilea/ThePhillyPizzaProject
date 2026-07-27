@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://thephillypizzaproject.com/link/">
+<title>The Philly Pizza Project</title>
+<meta name="description" content="Three friends ranking Philadelphia pizza with a rigorous, transparent scoring system.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --red: #C41E3A;
+    --charcoal: #2C2C2C;
+    --cream: #F5F0E8;
+    --white: #FFFFFF;
+    --border: #E8E0D0;
+    --gray-mid: #888;
+    --radius: 12px;
+    --font-head: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+  body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--charcoal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 60px;
+  }
+
+  /* HEADER */
+  .brand {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .brand__logo {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+  }
+  .brand__logo span { color: var(--red); }
+  .brand__sub {
+    font-size: 0.82rem;
+    color: var(--gray-mid);
+    margin-top: 6px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* LINK CARDS */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .link-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--charcoal);
+    transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+    position: relative;
+  }
+  .link-card:hover {
+    border-color: var(--red);
+    box-shadow: 0 4px 16px rgba(196,30,58,0.10);
+    transform: translateY(-1px);
+  }
+  .link-card--featured {
+    border-color: var(--red);
+    background: #fff8f8;
+  }
+  .link-card__emoji {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
+  }
+  .link-card__text { flex: 1; min-width: 0; }
+  .link-card__title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .link-card__sub {
+    font-size: 0.78rem;
+    color: var(--gray-mid);
+    margin-top: 2px;
+  }
+  .link-card__score {
+    font-family: var(--font-head);
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--red);
+    flex-shrink: 0;
+  }
+  .link-card__score span {
+    font-size: 0.7rem;
+    color: var(--gray-mid);
+    font-weight: 400;
+    font-family: var(--font-body);
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .badge--ny { background: #e8f4fd; color: #1a6fa8; }
+  .badge--neapolitan { background: #fff0f0; color: var(--red); }
+  .new-tag {
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    background: var(--red);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+
+  /* DIVIDER */
+  .section-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gray-mid);
+    margin: 8px 0 4px;
+    width: 100%;
+    max-width: 420px;
+    padding: 0 4px;
+  }
+
+  /* FOOTER */
+  .footer-note {
+    margin-top: 40px;
+    font-size: 0.78rem;
+    color: var(--gray-mid);
+    text-align: center;
+  }
+  .footer-note a { color: var(--red); text-decoration: none; }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <div class="brand__logo">The <span>Philly</span> Pizza Project</div>
+    <div class="brand__sub">Philadelphia · Three Reviewers · Zero Bias</div>
+  </div>
+
+  <div class="links">
+
+    <div class="section-label">Latest Reviews</div>
+
+    <a href="/reviews/beddia/" class="link-card link-card--featured">
+      <div class="new-tag">New</div>
+      <div class="link-card__emoji">🍕</div>
+      <div class="link-card__text">
+        <div class="link-card__title">Pizzeria Beddia</div>
+        <div class="link-card__sub">Fishtown · July 2026 <span class="badge badge--ny">New York Style</span></div>
+      </div>
+      <div class="link-card__score">8.0<span>/10</span></div>
+    </a>
+
+    <a href="/reviews/sorellina/" class="link-card">
+      <div class="link-card__emoji">🔥</div>
+      <div class="link-card__text">
+        <div class="link-card__title">Sorellina</div>
+        <div class="link-card__sub">Center City · July 2025 <span class="badge badge--neapolitan">Neapolitan</span></div>
+      </div>
+      <div class="link-card__score">6.0<span>/10</span></div>
+    </a>
+
+    <div class="section-label" style="margin-top:12px;">Explore</div>
+
+    <a href="/rankings/" class="link-card">
+      <div class="link-card__emoji">📊</div>
+      <div class="link-card__text">
+        <div class="link-card__title">Full Rankings</div>
+        <div class="link-card__sub">Neapolitan · New York · Detroit</div>
+      </div>
+    </a>
+
+    <a href="/about/" class="link-card">
+      <div class="link-card__emoji">👥</div>
+      <div class="link-card__text">
+        <div class="link-card__title">Meet the Panel</div>
+        <div class="link-card__sub">GA · MW · MA — who we are</div>
+      </div>
+    </a>
+
+    <a href="/reviews/" class="link-card">
+      <div class="link-card__emoji">📝</div>
+      <div class="link-card__text">
+        <div class="link-card__title">All Reviews</div>
+        <div class="link-card__sub">Every pizza we've scored</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer-note">
+    <a href="https://thephillypizzaproject.com">thephillypizzaproject.com</a>
+  </div>
+
+</body>
+</html>
